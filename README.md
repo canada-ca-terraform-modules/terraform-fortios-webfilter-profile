@@ -26,7 +26,7 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_webfilter_profiles"></a> [webfilter\_profiles](#input\_webfilter\_profiles) | Parameters for a FortiGate Webfilter profile. | map(object()) | n/a | yes |
+| <a name="input_webfilter_profiles"></a> [webfilter\_profiles](#input\_webfilter\_profiles) | Parameters for a FortiGate Webfilter profile. | `map(object())` | n/a | yes |
 
 ## Outputs
 
