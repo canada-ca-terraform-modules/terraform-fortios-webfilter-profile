@@ -1,4 +1,24 @@
 <!-- BEGIN_TF_DOCS -->
+## Usage
+```hcl
+module "wf_profiles_internal" {
+  source = "https://github.com/canada-ca-terraform-modules/terraform-fortios-webfilter-profile"
+  providers = {
+    fortios = fortios.my_alias
+  }
+#This example uses a web filter profile exclusively with a static url filter table. 
+#FortiGuard category based filtering must be disabled for this to work.  
+
+  webfilter_profiles = {
+    static_webfilter_1 = {
+      urlfilter_table = 20 #Existing URL filter table number. May be defined in terraform.
+    },
+    static_webfilter_2 = {
+      urlfilter_table = 21
+    }
+  }
+}
+```
 ## Requirements
 
 | Name | Version |
