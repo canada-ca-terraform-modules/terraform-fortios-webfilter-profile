@@ -1,7 +1,7 @@
 <!-- BEGIN_TF_DOCS -->
 ## Usage
 ```hcl
-module "wf_profiles_internal" {
+module "wf_profiles" {
   source = "https://github.com/canada-ca-terraform-modules/terraform-fortios-webfilter-profile"
   providers = {
     fortios = fortios.my_alias
